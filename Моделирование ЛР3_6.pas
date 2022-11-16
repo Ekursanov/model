@@ -625,6 +625,7 @@ begin
 //    t += dt;
 //    OutRes(t, y, c);
 //  end;
+
 ////  TextOut(120,270, round(500-y));
 ////  TextOut(120,270, v);
 //  c := colors.Black;
