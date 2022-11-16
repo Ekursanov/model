@@ -1,5 +1,5 @@
 ﻿uses GraphWPF, system;
-
+//uses Timers CreateAndStart(1000, () -> begin end); // (100, procedureName)
 var
   Hu, Hv, rx, ry, Sx, Sy: real;
 
@@ -53,7 +53,7 @@ begin
 end;
 
 
-procedure Init(coord: integer; rrx, rry: real; Vis: integer);
+procedure Init(coord: integer; rrx, rry: real; Vis: integer := 0);
 ///четверти, rx, ry
 begin
   rx := rrx;
@@ -127,8 +127,9 @@ begin
   
 end;
 
+procedure pr111();
 begin
-                //Задание 1 
+ //Задание 1 
               //  Init(1234, 4 * pi, 2);
               //  var dx := 10e-4;
               //  var x := -2 * pi;
@@ -139,7 +140,10 @@ begin
               //    OutRes(x, y, colors.red);
               //    x += dx;
               //  end; 
-                  //Задание 2 
+end;
+procedure pr112();
+begin
+   //Задание 2 
               //    Init(1234, 20, 20);
               //    var dx := 10e-4;
               //    var x :=  -10.0;
@@ -152,11 +156,15 @@ begin
               //      OutRes(x, y2, Colors.Green);
               //      x += dx;
               //    end;
-                  //Задание 3
+end;
+procedure pr113();
+begin
+  //Задание 3
               //    Init(1234, 20, 20);
-  
-  
-                  //1.2 Функции,заданнные параметрически
+end;
+procedure pr124();
+begin
+   //1.2 Функции,заданнные параметрически
                   //Задание 4
               //    Init(1234, 5, 5);
               //    var x, y, t :real;
@@ -170,7 +178,10 @@ begin
               //      OutRes(x,y,Colors.Red);
               //      t += dt;
               //    end;
-                  //Задание 5
+end;
+procedure pr125();
+begin
+  //Задание 5
               //      Init(1234, 5, 5);
               //      var x, k, t, d, y, n :real;
               //      (x, k, t, d, n) := 
@@ -185,7 +196,10 @@ begin
               //        OutRes(x, y, colors.Red);
               //        t += dt;
               //      end;
-                  //Задание 6
+end;
+procedure pr126();
+begin
+//Задание 6
               //      Init(1234, 10, 10);
               //      var x, t, y :real;
               //      t := 0;
@@ -199,7 +213,10 @@ begin
               //        OutRes(x, y, colors.Red);
               //        t += dt;
               //      end;    
-                    //1.3 Полярная система координат
+end;
+procedure pr137();
+begin
+ //1.3 Полярная система координат
                       //Задание 7
               //        Init(1234, 50, 50);
               //        var x, y, p, fi, kfi, dfi:real;
@@ -214,8 +231,10 @@ begin
               //          OutRes(x, y, colors.Red);
               //          fi += dfi;
               //        end;
-  
-                      //Задание 8
+end;
+procedure pr138();
+begin
+  //Задание 8
               //        Init(1234, 5, 5);
               //        var x, y, p, fi, kfi, dfi, k, n:real;
               //        kfi := 30;
@@ -229,7 +248,10 @@ begin
               //          OutRes(x, y, colors.Red);
               //          fi += dfi;
               //        end;    
-                         //Задание 9
+end;
+procedure pr139();
+begin
+    //Задание 9
               //        Init(1234, 5, 5);
               //        var x, y, p, fi, kfi, dfi, a, b, k:real;
               //        kfi := 2 * pi;
@@ -243,7 +265,10 @@ begin
               //          OutRes(x, y, colors.Red);
               //          fi += dfi;
               //        end; 
-                          //Задание 10
+end;
+procedure pr1310();
+begin
+ //Задание 10
           //            Init(1234, 20, 20);
           //            var x, y, p, fi, kfi, dfi, a, b, c, d, k:real;
           //            kfi := 2 * pi;
@@ -258,7 +283,10 @@ begin
           //              OutRes(x, y, colors.Red);
           //              fi += dfi;
           //            end; 
-                          //Задание 11
+end;
+procedure pr1311();
+begin
+  //Задание 11
               //        Init(1234, 20, 20);
               //        var x, y, p, fi, kfi, dfi, a, b, c, d, k:real;
               //        kfi := 2 * pi;
@@ -273,11 +301,22 @@ begin
               //          OutRes(x, y, colors.Red);
               //          fi += dfi;
               //        end;    
-  
-                    //Задание 12-13
+end;
+procedure pr1312();
+begin
+  //Задание 12-13
             //  Init(1234, 3, 3);
             //  BeginFrameBasedAnimation(Draw13);
-                      //Задание 14
+end;
+procedure pr1313();
+begin
+  //Задание 12-13
+            //  Init(1234, 3, 3);
+            //  BeginFrameBasedAnimation(Draw13);
+end;
+procedure pr1414();
+begin
+ //Задание 14
             //          Init(1234, 10, 10);
             //          var A := ArrGEn(10, i -> random(1,5));
             //          var cnt := A.Length;
@@ -289,7 +328,10 @@ begin
             //          for var i := 1 to cnt - 1 do
 //            Sector(u,v,200, B[i], B[i-1], RandomColor);
 //          Sector(u,v,200, 360, B[cnt - 1], RandomColor);
-                      //Задание 15
+end;
+procedure pr1415();
+begin
+ //Задание 15
           //  Init(1234, 10, 10);
           //  var A := Arr(1, 3, 1, 1, 2, 6);
           //  var cnt := A.Length;
@@ -316,7 +358,10 @@ begin
           //    var (u1, v1) := GetRes(0 + cos(fi15), 0 + sin(fi15));
           //    Sector(u1, v1, 200, 360, B[cnt - 1], RandomColor);
           //  end;
-              //Задание 16
+end;
+procedure pr1416();
+begin
+ //Задание 16
           //    var A := ArrGen(5,i -> random(1,10));
           //    Init(1, 2 * A.Length-1, 10);
           //    var sum := A.Sum;
@@ -326,12 +371,17 @@ begin
 //      var (u,v) := GetRes(x,y);
           //      FillRectangle(u,v,sx,-sy * (A[i] / sum) * 10,RandomColor);
           //    end;
-  
+end;
+procedure pr21();
+begin
                 //ЛР2 
               //Задание 1 - решить аналитически уравнение Фурье
               //dT = -r(T(t) - Tc)*dt
   
-              //Задание 2
+end;
+procedure pr22();
+begin
+  //Задание 2
           //    Init(1, 15, 10);
           //    var time, kt, dt, Tc, Tnow, r : real;
           //    time := 0;
@@ -346,7 +396,10 @@ begin
           //      OutRes(time, Tnow /10, colors.Red);
           //      time += dt;
           //    end;
-              //Задание 3
+end;
+procedure pr23();
+begin
+ //Задание 3
           //    Init(1, 10, 10);
           //    var time, kt, dt, Tc, Tnow, r : real;
           //    time := 0;
@@ -362,7 +415,10 @@ begin
           //      OutRes(time, Tc / 10, colors.Blue);
           //      time += dt;
           //    end;
-              //Задание 4
+end;
+procedure pr24();
+begin
+  //Задание 4
         //  Init(1, 15, 10);
         //  var A := Arr((0, 83.0), (1, 77.7), (2, 75.1), (3, 73.0), (4, 71.1), (5, 69.4), (6, 67.8),
         //    (7, 66.4), (8, 64.7), (9, 63.4), (10, 62.1), (11, 61.0), (12, 59.9), (13, 58.7), (14, 57.8), (15, 56.6));
@@ -386,7 +442,10 @@ begin
         //    OutRes(time, Tnow/10 , RandomColor);
         //    time += dt;
         //  end;
-        //Задание 5
+end;
+procedure pr25();
+begin
+ //Задание 5
       //  Init(1, 10, 10);
       //  var time, kt, dt, Tc, Tnow1, Tnow2, r: real;
       //  time := 0;
@@ -417,6 +476,11 @@ begin
       //      var s2 := 'Время при втором варианте (в усл. ед.):' + time.ToString;
       //      TextOut(0, 20, s2); break; end;
       //  end;  
+end;
+
+
+begin
+  
           //ЛР3
           //Задание 1 - 2
     //  Init(1, 6, 6);
